@@ -60,8 +60,11 @@ module.exports = {
         128: "32rem",
         144: "36rem",
       },
-      borderRadius: {
-        "4xl": "2rem",
+      fontSize: {
+        xxs: "0.6rem",
+      },
+      screens: {
+        xs: "420px",
       },
     },
     fontFamily: {

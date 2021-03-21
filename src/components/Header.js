@@ -2,23 +2,23 @@ import React from "react"
 import { Link } from "gatsby"
 
 const Header = () => {
-  const classes = "text-xxs"
+  const classes = "text-xxs xs:text-xs"
   const activeClasses = "text-green-100"
   return (
     <header>
       {/*             <a href="#" class="block">
     <img class="h-6 md:h-8" src="" alt="Logo" title="Logo"/>
   </a> */}
-      <nav className="bg-white-trans flex justify-around fixed w-full bottom-0 h-7 items-center shadow-lg">
+      <nav className="bg-white-trans flex justify-around fixed w-full bottom-0 h-10 items-center shadow-lg">
         <Link to="/" className={classes} activeClassName={activeClasses}>
           Startseite
         </Link>
         <Link
-          to="/unser-aktivstall"
+          to="/leistungen"
           className={classes}
           activeClassName={activeClasses}
         >
-          Unser Aktivstall
+          Leistungen
         </Link>
         <Link
           to="/ueber-uns"
