@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-gray-100;
+    @apply font-karla;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold;
+  }
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply my-3;
+  }
+  h2 {
+    @apply text-2xl;
+  }
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-xl;
+  }
+  p {
+    @apply mb-2;
+  }
+}
+
+div[role="button"] {
+  outline: 0;
+}

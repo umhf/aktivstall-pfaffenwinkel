@@ -1,6 +1,6 @@
-import React from "react";
-import { graphql, useStaticQuery } from "gatsby";
-import BackgroundImage from "gatsby-background-image";
+import React from "react"
+import { graphql, useStaticQuery } from "gatsby"
+import BackgroundImage from "gatsby-background-image"
 
 const FullBackgroundImage = ({ children }) => {
   const data = useStaticQuery(
@@ -15,13 +15,13 @@ const FullBackgroundImage = ({ children }) => {
         }
       }
     `
-  );
-  const imageData = data.desktop.childImageSharp.fluid;
-  console.log(imageData);
+  )
+  const imageData = data.desktop.childImageSharp.fluid
+  console.log(imageData)
   return (
     <BackgroundImage
       Tag="section"
-      className=""
+      className="h-screen"
       fluid={imageData}
       backgroundColor={`#040e18`}
       title="Fullscreen Background"
@@ -32,7 +32,7 @@ const FullBackgroundImage = ({ children }) => {
     >
       {children}
     </BackgroundImage>
-  );
-};
+  )
+}
 
-export default FullBackgroundImage;
+export default FullBackgroundImage

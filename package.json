@@ -15,10 +15,12 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@fontsource/karla": "^4.2.2",
     "gatsby": "^3.0.1",
     "gatsby-background-image": "^1.5.0",
     "gatsby-image": "^3.1.0",
     "gatsby-plugin-manifest": "^3.1.0",
+    "gatsby-plugin-postcss": "^4.1.0",
     "gatsby-plugin-react-helmet": "^4.1.0",
     "gatsby-plugin-sharp": "^3.1.1",
     "gatsby-plugin-sitemap": "^3.1.0",
