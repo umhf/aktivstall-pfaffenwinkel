@@ -1,1 +1,39 @@
-{"name":"aktivstall-pfaffenwinkel","version":"1.0.0","private":true,"description":"Aktivstall Pfaffenwinkel","author":"Uli Schmid","keywords":["gatsby"],"scripts":{"develop":"gatsby develop","start":"gatsby develop","build":"gatsby build","serve":"gatsby serve","clean":"gatsby clean"},"dependencies":{"gatsby":"^3.0.1","gatsby-image":"^3.1.0","gatsby-plugin-manifest":"^3.1.0","gatsby-plugin-react-helmet":"^4.1.0","gatsby-plugin-sharp":"^3.1.1","gatsby-plugin-sitemap":"^3.1.0","gatsby-source-filesystem":"^3.1.0","gatsby-transformer-sharp":"^3.1.0","react":"^17.0.1","react-dom":"^17.0.1","react-helmet":"^6.1.0"}}
+{
+  "name": "aktivstall-pfaffenwinkel",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Aktivstall Pfaffenwinkel",
+  "author": "Uli Schmid",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "gatsby": "^3.0.1",
+    "gatsby-image": "^3.1.0",
+    "gatsby-plugin-manifest": "^3.1.0",
+    "gatsby-plugin-react-helmet": "^4.1.0",
+    "gatsby-plugin-sharp": "^3.1.1",
+    "gatsby-plugin-sitemap": "^3.1.0",
+    "gatsby-source-filesystem": "^3.1.0",
+    "gatsby-transformer-sharp": "^3.1.0",
+    "postcss": "^8.2.6",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0",
+    "react-icons": "^4.2.0",
+    "react-slick": "^0.28.1",
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "stylelint-config-recommended": "^4.0.0",
+    "tailwindcss": "^2.0.4"
+  }
+}
