@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "Aktivstall Pfaffenwinkel",
+    siteUrl: "https://aktivstall-pfaffenwinkel.de",
   },
   plugins: [
     "gatsby-plugin-sharp",
@@ -23,4 +24,4 @@ module.exports = {
     },
     "gatsby-plugin-postcss",
   ],
-};
+}
