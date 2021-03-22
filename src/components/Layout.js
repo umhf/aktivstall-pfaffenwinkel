@@ -6,7 +6,9 @@ const Layout = ({ children }) => {
   return (
     <BackgroundImage>
       <Header></Header>
-      <main className="font-karla">{children}</main>
+      <main className="container mx-auto px-5 font-karla pb-14">
+        {children}
+      </main>
     </BackgroundImage>
   )
 }

@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import { FaMobileAlt, FaEnvelope } from "react-icons/fa"
 
 const Header = () => {
   const classes = "text-xxs xs:text-xs"
@@ -9,7 +10,24 @@ const Header = () => {
       {/*             <a href="#" class="block">
     <img class="h-6 md:h-8" src="" alt="Logo" title="Logo"/>
   </a> */}
-      <nav className="bg-white-trans flex justify-around fixed w-full bottom-0 h-10 items-center shadow-lg">
+      <div
+        id="metanavi"
+        className="container bg-green-trans py-2 px-5 text-xs flex justify-end"
+      >
+        <div className="ml-4">
+          <a href="mailto:michaela@aktivstall-pfaffenwinkel.de">
+            <FaEnvelope className="h-5 w-5" />
+            <span className="hidden">michaela@aktivstall-pfaffenwinkel.de</span>
+          </a>
+        </div>
+        <div className="ml-4">
+          <a href="tel:0152 54180038">
+            <FaMobileAlt className="h-5 w-5" />
+            <span className="hidden">0152 54180038</span>
+          </a>
+        </div>
+      </div>
+      <nav className="text-gray-100 bg-white-trans flex justify-around fixed w-full bottom-0 h-10 items-center">
         <Link to="/" className={classes} activeClassName={activeClasses}>
           Startseite
         </Link>

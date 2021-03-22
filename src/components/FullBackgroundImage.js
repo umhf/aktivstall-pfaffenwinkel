@@ -20,8 +20,8 @@ const FullBackgroundImage = ({ children }) => {
   console.log(imageData)
   return (
     <BackgroundImage
-      Tag="section"
-      className="h-screen"
+      Tag="div"
+      className="bg-fixed bg-no-repeat bg-black-trans"
       fluid={imageData}
       backgroundColor={`#040e18`}
       title="Fullscreen Background"
