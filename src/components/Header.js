@@ -12,7 +12,7 @@ const Header = () => {
   </a> */}
       <div
         id="metanavi"
-        className="container bg-green-trans py-2 px-5 text-xs flex justify-end"
+        className="relative container bg-green-trans py-2 px-5 text-xs flex justify-end"
       >
         <div className="ml-4">
           <a href="mailto:michaela@aktivstall-pfaffenwinkel.de">
