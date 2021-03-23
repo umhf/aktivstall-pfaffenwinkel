@@ -29,6 +29,10 @@ module.exports = {
         100: "#000000",
         trans: "#0000004d",
       },
+      purple: {
+        100: "#631A53",
+        trans: "#631a5394",
+      },
     },
     extend: {
       spacing: {

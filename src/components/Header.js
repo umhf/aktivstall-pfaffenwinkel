@@ -27,7 +27,7 @@ const Header = () => {
           </a>
         </div>
       </div>
-      <nav className="text-gray-100 bg-white-trans flex justify-around fixed w-full bottom-0 h-10 items-center">
+      <nav className="text-gray-100 bg-white-trans flex justify-around fixed w-full bottom-0 h-10 items-center z-10">
         <Link to="/" className={classes} activeClassName={activeClasses}>
           Startseite
         </Link>

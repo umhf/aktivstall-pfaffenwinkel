@@ -29,7 +29,19 @@ const IndexPage = () => {
           <FaChevronDown className="stroke-current text-green-100 w-8 h-8" />
         </div>
       </div>
-      <div>unterer teil</div>
+      <div>
+        <div className="cart">
+          <p className="text-xl xs:text-2xl">
+            Wir haben jahrelange <span className="hl">Erfahrung </span>
+            in der <span className="hl">Pensionspferdehaltung</span> und im{" "}
+            <span className="hl">Turniergeschehen</span>
+          </p>
+          <p className="text-xs">
+            Uns ist es eine Herzensangelegenheit, natürliche Haltung und
+            Training in Einklang zu bringen
+          </p>
+        </div>
+      </div>
     </Layout>
   )
 }

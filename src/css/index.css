@@ -47,6 +47,18 @@ div[role="button"] {
   text-shadow: 4px 4px 10px #000000a3;
 }
 
+.cart {
+  backdrop-filter: blur(8px);
+  @apply bg-purple-trans;
+  @apply p-5;
+  @apply rounded-md;
+  @apply shadow-xl;
+}
+
+.hl {
+  @apply text-green-100;
+}
+
 /* .text-xxs {
   font-size: 0.6rem;
 } */
