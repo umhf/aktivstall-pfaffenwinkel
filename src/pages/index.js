@@ -1,7 +1,6 @@
 import * as React from "react"
 import Layout from "../components/Layout"
 import logo from "../images/logo-light.svg"
-import { FaChevronDown } from "react-icons/fa"
 
 // markup
 const IndexPage = () => {
@@ -30,7 +29,7 @@ const IndexPage = () => {
         </div> */}
       </div>
       <div>
-        <div className="cart">
+        <div className="cart blur">
           <p className="text-xl xs:text-2xl">
             Wir haben jahrelange <span className="hl">Erfahrung </span>
             in der <span className="hl">Pensionspferdehaltung</span> und im{" "}
@@ -41,7 +40,7 @@ const IndexPage = () => {
             Training in Einklang zu bringen
           </p>
         </div>
-        <div className="cart">
+        <div className="cart blur">
           <p className="text-xl xs:text-2xl">
             Wir haben jahrelange <span className="hl">Erfahrung </span>
             in der <span className="hl">Pensionspferdehaltung</span> und im{" "}
@@ -52,7 +51,7 @@ const IndexPage = () => {
             Training in Einklang zu bringen
           </p>
         </div>
-        <div className="cart">
+        <div className="cart blur">
           <p className="text-xl xs:text-2xl">
             Wir haben jahrelange <span className="hl">Erfahrung </span>
             in der <span className="hl">Pensionspferdehaltung</span> und im{" "}

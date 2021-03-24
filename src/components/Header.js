@@ -21,7 +21,7 @@ const Header = () => {
   </a> */}
       <div
         id="metanavi"
-        className="relative container bg-green-trans py-2 px-5 text-xs flex justify-end text-white-100"
+        className="blur bg-gradient-to-b from-blue-trans to-green-trans relative container bg-green-trans py-2 px-5 text-xs flex justify-end text-white-100"
       >
         <div className="flex items-center flex-1">
           <Link to="/" className={classes} activeClassName="">

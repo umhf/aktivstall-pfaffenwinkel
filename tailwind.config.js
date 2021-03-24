@@ -11,6 +11,16 @@ module.exports = {
     ],
   },
   theme: {
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: "1.25rem",
+        sm: "2rem",
+        lg: "4rem",
+        xl: "5rem",
+        "2xl": "6rem",
+      },
+    },
     colors: {
       transparent: "transparent",
       current: "currentColor",
@@ -34,6 +44,10 @@ module.exports = {
       purple: {
         100: "#631A53",
         trans: "#631a5394",
+      },
+      blue: {
+        100: "#05668D",
+        trans: "#05668da1",
       },
     },
     extend: {

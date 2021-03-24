@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply text-white-100 font-karla;
+    @apply text-white-100 font-karla pb-14;
   }
   h1,
   h2,
@@ -47,7 +47,6 @@ div[role="button"] {
 }
 
 .cart {
-  backdrop-filter: blur(8px);
   @apply bg-green-lightTrans p-5 rounded-md shadow-xl mb-8 text-gray-100;
 }
 
@@ -57,6 +56,10 @@ div[role="button"] {
 
 .navi-icon {
   @apply mx-auto w-5 h-5;
+}
+
+.blur {
+  backdrop-filter: blur(4px);
 }
 /* .text-xxs {
   font-size: 0.6rem;

@@ -1,5 +1,6 @@
 import React from "react"
 import Header from "./Header"
+import Footer from "./Footer"
 import BackgroundImage from "../components/FullBackgroundImage"
 
 const Layout = ({ children }) => {
@@ -7,9 +8,8 @@ const Layout = ({ children }) => {
     <>
       <BackgroundImage></BackgroundImage>
       <Header></Header>
-      <main className="relative container mx-auto px-5 font-karla pb-14">
-        {children}
-      </main>
+      <main className="relative container">{children}</main>
+      <Footer></Footer>
     </>
   )
 }
