@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import {
-  FaMobileAlt,
+  FaPhoneAlt,
   FaEnvelope,
   FaHorseHead,
   FaUsers,
@@ -60,7 +60,7 @@ const Header = () => {
         </div>
         <div className="ml-4">
           <a href="tel:+4915254180038">
-            <FaMobileAlt className="navi-icon" />
+            <FaPhoneAlt className="navi-icon" />
             <span className="hidden">0152 54180038</span>
           </a>
         </div>

@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import logo from "../images/logo-light.svg"
 import {
-  FaMobileAlt,
+  FaPhoneAlt,
   FaEnvelope,
   FaHorseHead,
   FaUsers,
@@ -72,7 +72,7 @@ const Footer = () => {
               Email
             </a>
             <a className="links" href="tel:+4915254180038">
-              <FaMobileAlt className="icon" />
+              <FaPhoneAlt className="icon" />
               0152 54180038
             </a>
           </div>
