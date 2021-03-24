@@ -21,6 +21,8 @@ module.exports = {
       green: {
         100: "#02C39A",
         trans: "#02c39aa1",
+        light: "#f2fffe",
+        lightTrans: "#f2fffed6",
       },
       gray: {
         100: "#3C3C3B",

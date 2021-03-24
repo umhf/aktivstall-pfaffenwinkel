@@ -9,7 +9,7 @@ const IndexPage = () => {
     <Layout>
       <div
         id="hero"
-        class="relative text-shadow h-screen mx-auto text-center pt-11"
+        class="relative text-shadow mx-auto text-center pt-11 mb-24"
       >
         <img src={logo} alt="Logo" className="mx-auto w-36" />
         <h2>
@@ -22,14 +22,36 @@ const IndexPage = () => {
           eine artgerechte, auf ihre Bedürfnisse angepasste Haltung in einem
           innovativen Aktivstall.
         </p>
-        <div
+        {/*         <div
           id="scroll-down"
           className="flex justify-center absolute bottom-28 w-full"
         >
           <FaChevronDown className="stroke-current text-green-100 w-8 h-8" />
-        </div>
+        </div> */}
       </div>
       <div>
+        <div className="cart">
+          <p className="text-xl xs:text-2xl">
+            Wir haben jahrelange <span className="hl">Erfahrung </span>
+            in der <span className="hl">Pensionspferdehaltung</span> und im{" "}
+            <span className="hl">Turniergeschehen</span>
+          </p>
+          <p className="text-xs">
+            Uns ist es eine Herzensangelegenheit, natürliche Haltung und
+            Training in Einklang zu bringen
+          </p>
+        </div>
+        <div className="cart">
+          <p className="text-xl xs:text-2xl">
+            Wir haben jahrelange <span className="hl">Erfahrung </span>
+            in der <span className="hl">Pensionspferdehaltung</span> und im{" "}
+            <span className="hl">Turniergeschehen</span>
+          </p>
+          <p className="text-xs">
+            Uns ist es eine Herzensangelegenheit, natürliche Haltung und
+            Training in Einklang zu bringen
+          </p>
+        </div>
         <div className="cart">
           <p className="text-xl xs:text-2xl">
             Wir haben jahrelange <span className="hl">Erfahrung </span>
