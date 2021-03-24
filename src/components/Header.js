@@ -9,6 +9,8 @@ import {
   FaAddressCard,
   FaImage,
   FaHome,
+  FaFacebookF,
+  FaInstagram,
 } from "react-icons/fa"
 
 const Header = () => {
@@ -29,14 +31,36 @@ const Header = () => {
           </Link>
         </div>
         <div className="ml-4">
+          <a
+            className="links"
+            rel="noreferrer"
+            target="_BLANK"
+            href="https://www.instagram.com/aktivstall_pfaffenwinkel_/"
+          >
+            <FaInstagram className="navi-icon" />
+            <span className="hidden">Instagram</span>
+          </a>
+        </div>
+        <div className="ml-4">
+          <a
+            className="links"
+            rel="noreferrer"
+            target="_BLANK"
+            href="https://www.facebook.com/aktivstall.pfaffenwinkel"
+          >
+            <FaFacebookF className="navi-icon" />
+            <span className="hidden">Facebook</span>
+          </a>
+        </div>
+        <div className="ml-4">
           <a href="mailto:michaela@aktivstall-pfaffenwinkel.de">
-            <FaEnvelope className="h-5 w-5" />
+            <FaEnvelope className="navi-icon" />
             <span className="hidden">michaela@aktivstall-pfaffenwinkel.de</span>
           </a>
         </div>
         <div className="ml-4">
-          <a href="tel:0152 54180038">
-            <FaMobileAlt className="h-5 w-5" />
+          <a href="tel:+4915254180038">
+            <FaMobileAlt className="navi-icon" />
             <span className="hidden">0152 54180038</span>
           </a>
         </div>

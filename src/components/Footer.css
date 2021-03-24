@@ -1,0 +1,11 @@
+.links-wrapper {
+  @apply text-xs flex flex-col mb-4;
+}
+
+.links {
+  @apply flex items-center;
+}
+
+.icon {
+  @apply h-4 w-4 my-1 mr-1;
+}
