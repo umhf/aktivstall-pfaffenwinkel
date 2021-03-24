@@ -1,4 +1,5 @@
 const colors = require("tailwindcss/colors")
+const defaultTheme = require("tailwindcss/defaultTheme")
 
 module.exports = {
   purge: {
@@ -11,6 +12,10 @@ module.exports = {
     ],
   },
   theme: {
+    screens: {
+      xs: "420px",
+      ...defaultTheme.screens,
+    },
     container: {
       center: true,
       padding: {
@@ -57,9 +62,6 @@ module.exports = {
       },
       fontSize: {
         xxs: "0.6rem",
-      },
-      screens: {
-        xs: "420px",
       },
     },
     fontFamily: {

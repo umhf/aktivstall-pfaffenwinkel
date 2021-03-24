@@ -30,34 +30,34 @@ const IndexPage = () => {
       </div>
       <div>
         <div className="cart blur">
-          <p className="text-xl xs:text-2xl">
+          <p className="text-xl xs:text-2xl sm:text-3xl">
             Wir haben jahrelange <span className="hl">Erfahrung </span>
             in der <span className="hl">Pensionspferdehaltung</span> und im{" "}
             <span className="hl">Turniergeschehen</span>
           </p>
-          <p className="text-xs">
+          <p className="text-xs sm:text-base">
             Uns ist es eine Herzensangelegenheit, natürliche Haltung und
             Training in Einklang zu bringen
           </p>
         </div>
         <div className="cart blur">
-          <p className="text-xl xs:text-2xl">
+          <p className="text-xl xs:text-2xl sm:text-3xl">
             Wir haben jahrelange <span className="hl">Erfahrung </span>
             in der <span className="hl">Pensionspferdehaltung</span> und im{" "}
             <span className="hl">Turniergeschehen</span>
           </p>
-          <p className="text-xs">
+          <p className="text-xs sm:text-base">
             Uns ist es eine Herzensangelegenheit, natürliche Haltung und
             Training in Einklang zu bringen
           </p>
         </div>
         <div className="cart blur">
-          <p className="text-xl xs:text-2xl">
+          <p className="text-xl xs:text-2xl sm:text-3xl">
             Wir haben jahrelange <span className="hl">Erfahrung </span>
             in der <span className="hl">Pensionspferdehaltung</span> und im{" "}
             <span className="hl">Turniergeschehen</span>
           </p>
-          <p className="text-xs">
+          <p className="text-xs sm:text-base">
             Uns ist es eine Herzensangelegenheit, natürliche Haltung und
             Training in Einklang zu bringen
           </p>
