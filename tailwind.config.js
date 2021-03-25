@@ -84,6 +84,5 @@ module.exports = {
       inset: ["odd"],
       flexDirection: ["odd"],
     },
-    container: [],
   },
 }

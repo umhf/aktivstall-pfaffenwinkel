@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply text-white-100 font-karla pb-14;
+    @apply text-white-100 font-karla pb-14 md:pb-0;
   }
   h1,
   h2,
@@ -44,9 +44,6 @@
   }
   .navi-icon {
     @apply mx-auto w-5 h-5;
-  }
-  .navi .navi-icon {
-    @apply md:hidden;
   }
   @variants responsive {
     .hyphens {

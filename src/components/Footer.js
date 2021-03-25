@@ -24,7 +24,7 @@ const Footer = () => {
         <Link to="/">
           <img src={logo} alt="Logo" className="mx-auto w-36" />
         </Link>
-        <div className="grid grid-cols-2 grid-flow-row gap-4 mt-1 sm:grid-cols-3 md:grid-cols-5">
+        <div className="grid grid-cols-2 grid-flow-row gap-4 mt-4 sm:grid-cols-3 md:grid-cols-5">
           <div className="links-wrapper row-span-2 sm:row-span-1 md:col-start-2">
             <p className="font-bold">Seiten</p>
             <Link className="links" to="/">

@@ -14,20 +14,61 @@ import {
 } from "react-icons/fa"
 
 const Header = () => {
-  const classes = "text-xs xs:text-xs"
-  const activeClasses = "text-green-100"
+  const classes = "text-xs md:text-sm"
+  const activeClassesMobile = "text-green-100"
+  const activeClasses = "font-bold"
   return (
     <header>
       <div
-        id="metanavi"
-        className="bg-gradient-to-b from-blue-trans to-green-trans bg-green-trans relative text-xs blur text-white-100"
+        id="navi-wrapper"
+        className="bg-gradient-to-b from-blue-trans to-green-trans bg-green-trans relative blur text-white-100"
       >
-        <div className="px-5 py-2 flex justify-end ">
+        <div className="px-5 py-2 flex justify-end md:container">
           <div className="flex items-center flex-1">
-            <Link to="/" className={classes} activeClassName="">
+            <Link to="/" className={classes}>
               <FaHome className="navi-icon" />
             </Link>
           </div>
+          <nav
+            className="navi justify-around 
+       w-full bottom-0 items-center z-10 hidden md:flex"
+          >
+            <Link
+              to="/leistungen"
+              className={classes}
+              activeClassName={activeClasses}
+            >
+              Leistungen
+            </Link>
+            <Link
+              to="/ueber-uns"
+              className={classes}
+              activeClassName={activeClasses}
+            >
+              Über uns
+            </Link>
+            <Link
+              to="/preise"
+              className={classes}
+              activeClassName={activeClasses}
+            >
+              Preise
+            </Link>
+            <Link
+              to="/kontakt"
+              className={classes}
+              activeClassName={activeClasses}
+            >
+              Kontakt
+            </Link>
+            <Link
+              to="/impressionen"
+              className={classes}
+              activeClassName={activeClasses}
+            >
+              Impressionen
+            </Link>
+          </nav>
           <div className="ml-4">
             <a
               className="links"
@@ -67,14 +108,13 @@ const Header = () => {
         </div>
       </div>
       <nav
-        className="navi py-3 text-gray-100 bg-white-trans flex justify-around 
-      fixed w-full bottom-0 items-center z-10 md:relative md:border-t md:border-white-100
-      md:bg-gradient-to-b md:to-blue-trans md:from-green-trans md:bg-green-trans md:blur md:text-white-100"
+        className="mobile-navi py-3 text-gray-100 bg-white-trans flex justify-around 
+      fixed w-full bottom-0 items-center z-10 md:hidden"
       >
         <Link
           to="/leistungen"
           className={classes}
-          activeClassName={activeClasses}
+          activeClassName={activeClassesMobile}
         >
           <FaHorseHead className="navi-icon" />
           Leistungen
@@ -82,23 +122,31 @@ const Header = () => {
         <Link
           to="/ueber-uns"
           className={classes}
-          activeClassName={activeClasses}
+          activeClassName={activeClassesMobile}
         >
           <FaUsers className="navi-icon" />
           Über uns
         </Link>
-        <Link to="/preise" className={classes} activeClassName={activeClasses}>
+        <Link
+          to="/preise"
+          className={classes}
+          activeClassName={activeClassesMobile}
+        >
           <FaEuroSign className="navi-icon" />
           Preise
         </Link>
-        <Link to="/kontakt" className={classes} activeClassName={activeClasses}>
+        <Link
+          to="/kontakt"
+          className={classes}
+          activeClassName={activeClassesMobile}
+        >
           <FaAddressCard className="navi-icon" />
           Kontakt
         </Link>
         <Link
           to="/impressionen"
           className={classes}
-          activeClassName={activeClasses}
+          activeClassName={activeClassesMobile}
         >
           <FaImage className="navi-icon" />
           Impressionen
