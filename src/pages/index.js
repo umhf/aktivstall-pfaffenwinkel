@@ -1,11 +1,13 @@
 import * as React from "react"
 import Layout from "../components/Layout"
 import logo from "../images/logo-light.svg"
+import SEO from "../components/SEO"
 
 // markup
 const IndexPage = () => {
   return (
     <Layout>
+      <SEO></SEO>
       <div
         id="hero"
         class="relative text-shadow mx-auto text-center pt-11 mb-24"
@@ -28,9 +30,9 @@ const IndexPage = () => {
           <FaChevronDown className="stroke-current text-green-100 w-8 h-8" />
         </div> */}
       </div>
-      <div>
+      <div className="md:hyphens md:grid md:grid-cols-3 md:gap-4">
         <div className="cart blur">
-          <p className="text-xl xs:text-2xl sm:text-3xl">
+          <p className="big-text">
             Wir haben jahrelange <span className="hl">Erfahrung </span>
             in der <span className="hl">Pensionspferdehaltung</span> und im{" "}
             <span className="hl">Turniergeschehen</span>
@@ -41,7 +43,7 @@ const IndexPage = () => {
           </p>
         </div>
         <div className="cart blur">
-          <p className="text-xl xs:text-2xl sm:text-3xl">
+          <p className="big-text">
             Wir haben jahrelange <span className="hl">Erfahrung </span>
             in der <span className="hl">Pensionspferdehaltung</span> und im{" "}
             <span className="hl">Turniergeschehen</span>
@@ -52,7 +54,7 @@ const IndexPage = () => {
           </p>
         </div>
         <div className="cart blur">
-          <p className="text-xl xs:text-2xl sm:text-3xl">
+          <p className="big-text">
             Wir haben jahrelange <span className="hl">Erfahrung </span>
             in der <span className="hl">Pensionspferdehaltung</span> und im{" "}
             <span className="hl">Turniergeschehen</span>

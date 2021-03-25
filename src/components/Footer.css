@@ -1,5 +1,5 @@
 .links-wrapper {
-  @apply text-xs flex flex-col mb-4;
+  @apply text-xs mb-4;
 }
 
 .links {

@@ -20,9 +20,9 @@ const Header = () => {
     <header>
       <div
         id="metanavi"
-        className="blur bg-gradient-to-b from-blue-trans to-green-trans relative bg-green-trans text-xs text-white-100"
+        className="bg-gradient-to-b from-blue-trans to-green-trans bg-green-trans relative text-xs blur text-white-100"
       >
-        <div className="container py-2 flex justify-end ">
+        <div className="px-5 py-2 flex justify-end ">
           <div className="flex items-center flex-1">
             <Link to="/" className={classes} activeClassName="">
               <FaHome className="navi-icon" />
@@ -66,7 +66,11 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <nav className="text-gray-100 bg-white-trans flex justify-around fixed w-full bottom-0 h-14 items-center z-10">
+      <nav
+        className="navi py-3 text-gray-100 bg-white-trans flex justify-around 
+      fixed w-full bottom-0 items-center z-10 md:relative md:border-t md:border-white-100
+      md:bg-gradient-to-b md:to-blue-trans md:from-green-trans md:bg-green-trans md:blur md:text-white-100"
+      >
         <Link
           to="/leistungen"
           className={classes}
