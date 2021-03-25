@@ -38,6 +38,26 @@
   }
 }
 
+@layer utilities {
+  .cart .big-text {
+    @apply text-xl xs:text-2xl sm:text-3xl md:text-xl;
+  }
+  .navi-icon {
+    @apply mx-auto w-5 h-5;
+  }
+  .navi .navi-icon {
+    @apply md:hidden;
+  }
+  @variants responsive {
+    .hyphens {
+      hyphens: auto;
+    }
+    .blur {
+      backdrop-filter: blur(4px);
+    }
+  }
+}
+
 div[role="button"] {
   outline: 0;
 }
@@ -53,14 +73,3 @@ div[role="button"] {
 .hl {
   @apply text-green-100;
 }
-
-.navi-icon {
-  @apply mx-auto w-5 h-5;
-}
-
-.blur {
-  backdrop-filter: blur(4px);
-}
-/* .text-xxs {
-  font-size: 0.6rem;
-} */
