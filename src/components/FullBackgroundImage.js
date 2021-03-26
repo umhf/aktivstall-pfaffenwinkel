@@ -17,12 +17,11 @@ const FullBackgroundImage = ({ children }) => {
     `
   )
   const imageData = data.desktop.childImageSharp.fluid
-  console.log(imageData)
   return (
     <BackgroundImage
       style={{ position: "" }}
       Tag="div"
-      className="fixed h-screen w-full bg-fixed bg-no-repeat bg-black-trans"
+      className="bg fixed h-screen w-full bg-fixed bg-no-repeat bg-black-trans"
       fluid={imageData}
       backgroundColor={`#040e18`}
       title="Fullscreen Background"

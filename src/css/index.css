@@ -70,3 +70,16 @@ div[role="button"] {
 .hl {
   @apply text-green-100;
 }
+
+@media (min-width: 768px) {
+  .main {
+    height: calc(100vh - 60px);
+  }
+}
+
+@media (max-width: 639px) {
+  .bg:after,
+  .bg:before {
+    background-position: -530px 0 !important;
+  }
+}
