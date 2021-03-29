@@ -28,24 +28,23 @@ const IndexPage = () => {
         </div>
         <div className="cart blur">
           <p className="big-text">
-            Wir haben jahrelange <span className="hl">Erfahrung </span>
-            in der <span className="hl">Pensionspferdehaltung</span> und im{" "}
-            <span className="hl">Turniergeschehen</span>
+            <span className="hl">Kraftfutterautomaten</span> und{" "}
+            <span className="hl">zeitgesteuerte Heuraufen</span> bieten den
+            Tieren eine auf sie <span className="hl">abgestimmte Haltung</span>
           </p>
           <p className="text-xs sm:text-base">
-            Uns ist es eine Herzensangelegenheit, natürliche Haltung und
-            Training in Einklang zu bringen
+            Auch Pferde im Rentenalter finden in unserem Ad Libitum Bereich ihre
+            Ruhe.
           </p>
         </div>
         <div className="cart blur">
           <p className="big-text">
-            Wir haben jahrelange <span className="hl">Erfahrung </span>
-            in der <span className="hl">Pensionspferdehaltung</span> und im{" "}
-            <span className="hl">Turniergeschehen</span>
+            Weite Wiesen, der Lech und vier Badeseen zu Füßen der Alpen laden zu{" "}
+            <span className="hl">tollen Ausritten</span> ein
           </p>
           <p className="text-xs sm:text-base">
-            Uns ist es eine Herzensangelegenheit, natürliche Haltung und
-            Training in Einklang zu bringen
+            Unser Aktivstall liegt in Riesen zwischen Steingaden und Peiting im
+            wunderschönen Pfaffenwinkel
           </p>
         </div>
       </div>
