@@ -45,6 +45,12 @@
   .navi-icon {
     @apply mx-auto w-5 h-5;
   }
+  li {
+    @apply mb-2;
+  }
+  .cart--leistungen .leistungen {
+    @apply md:absolute md:bottom-0 bg-black-trans w-full p-4 blur;
+  }
   @variants responsive {
     .hyphens {
       hyphens: auto;
@@ -73,7 +79,7 @@ div[role="button"] {
 
 @media (min-width: 768px) {
   .main {
-    height: calc(100vh - 60px);
+    min-height: calc(100vh - 60px);
   }
 }
 

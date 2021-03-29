@@ -4,6 +4,7 @@ module.exports = {
     siteUrl: "https://aktivstall-pfaffenwinkel.de",
   },
   plugins: [
+    `gatsby-plugin-image`,
     "gatsby-plugin-sharp",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
