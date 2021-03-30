@@ -81,6 +81,11 @@ div[role="button"] {
   .main {
     min-height: calc(100vh - 60px);
   }
+  .cart--leistungen .leistungen {
+    width: calc(100% - 0.5rem);
+    bottom: 7px;
+    backdrop-filter: none;
+  }
 }
 
 @media (max-width: 639px) {
@@ -88,4 +93,11 @@ div[role="button"] {
   .bg:before {
     background-position: -530px 0 !important;
   }
+}
+
+.slick-slider button.slick-next {
+  right: -17px;
+}
+.slick-slider button.slick-prev {
+  left: -17px;
 }

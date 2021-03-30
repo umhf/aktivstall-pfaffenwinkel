@@ -14,11 +14,11 @@ const LeistungenPage = () => {
   const settings = {
     dots: true,
     infinite: true,
-    autoplay: true,
+    autoplay: false,
     speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: false,
+    arrows: true,
     autoplaySpeed: 4000,
   }
   return (
