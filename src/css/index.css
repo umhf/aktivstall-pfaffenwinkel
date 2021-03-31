@@ -101,3 +101,8 @@ div[role="button"] {
 .slick-slider button.slick-prev {
   left: -17px;
 }
+
+.ueber-uns-cart {
+  transform: translateX(-10px) translateY(-120px);
+  width: calc(100% + 20px);
+}

@@ -10,11 +10,11 @@ import { StaticImage } from "gatsby-plugin-image"
 const LeistungenPage = () => {
   const data = {}
   data.heading = "Unsere Leistungen"
-  data.text = ``
+  data.text = `Artgerechte Haltung im innovativen Aktivstall`
   const settings = {
     dots: true,
     infinite: true,
-    autoplay: false,
+    autoplay: true,
     speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -25,9 +25,9 @@ const LeistungenPage = () => {
     <Layout>
       <SEO></SEO>
       <Hero data={data}></Hero>
-      <div className="mb-12">
+      <div className="mb-12 max-w-2xl mx-auto">
         <Slider {...settings}>
-          <div className="cart--leistungen relative px-1">
+          <div className="cart--leistungen relative px-1 max">
             <StaticImage
               src="../images/leistungen/1_luftaufnahme.jpeg"
               alt="A dinosaur"
