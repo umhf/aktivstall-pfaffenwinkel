@@ -13,7 +13,7 @@ const PreisePage = () => {
       <SEO></SEO>
       <Hero data={data}></Hero>
       <div class="preis-wrapper mb-12 max-w-2xl mx-auto bg-black-trans p-4 blur">
-        <h2 className="text-center">Unser Aktivpaket</h2>
+        <h2 className="text-center">Aktivpaket</h2>
         <div className="text-green-100 font-bold text-6xl flex justify-center p-4 m-4 border border-l-0 border-r-0 border-gray-light">
           400{" "}
           <span className="font-normal text-green-lightTrans text-base ml-2">
