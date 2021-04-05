@@ -57,6 +57,10 @@
   .preis-wrapper .icon {
     @apply mr-2 text-purple-light w-4 h-4;
   }
+  input,
+  textarea {
+    @apply bg-transparent border border-gray-light;
+  }
   @variants responsive {
     .hyphens {
       hyphens: auto;
