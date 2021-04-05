@@ -51,6 +51,12 @@
   .cart--leistungen .leistungen {
     @apply md:absolute md:bottom-0 bg-black-trans w-full p-4 blur;
   }
+  .preis-wrapper li {
+    @apply flex items-center mr-4;
+  }
+  .preis-wrapper .icon {
+    @apply mr-2 text-purple-light w-4 h-4;
+  }
   @variants responsive {
     .hyphens {
       hyphens: auto;

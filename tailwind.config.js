@@ -41,6 +41,7 @@ module.exports = {
       },
       gray: {
         100: "#3C3C3B",
+        light: "#6c6c6c",
       },
       black: {
         100: "#000000",
@@ -49,6 +50,7 @@ module.exports = {
       purple: {
         100: "#631A53",
         trans: "#631a5394",
+        light: "#eaaedd",
       },
       blue: {
         100: "#05668D",
