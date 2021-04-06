@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react"
+import React, { Component } from "react"
 import Layout from "../components/Layout"
 import SEO from "../components/SEO"
 import Hero from "../components/Hero"
@@ -16,7 +16,7 @@ class KontaktPage extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      data: { email: "", message: "" },
+      data: {},
       feedbackMsg: "",
       sent: false,
       valid: false,
@@ -30,11 +30,7 @@ class KontaktPage extends Component {
       url: window.location.pathname,
       method: "post",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      data: qs.stringify({
-        "form-name": "contact",
-        email: this.state.data.email,
-        message: this.state.data.message,
-      }),
+      data: qs.stringify({ ...this.state.data, "form-name": "Kontakt" }),
     }
     axios(axiosOptions)
       .then(() => {
@@ -65,6 +61,7 @@ class KontaktPage extends Component {
     this.setState({
       data: { ...this.state.data, [e.target.name]: e.target.value },
     })
+    console.log(this.state.data)
   }
 
   openContactForm = () => {
@@ -74,30 +71,22 @@ class KontaktPage extends Component {
   }
 
   render() {
-    //const [isClosed, setOpen] = useState("false")
-    //this.state = {isClosed: false}
-    /* const toggleClass = () => {
-      this.setOpen(!isClosed)
-    } */
     const data = {}
     data.heading = "Kontakt"
     data.text = `Du hast Interesse an einem Platz in unserem Aktivstall?`
-
-    const { email, message } = this.state.data
 
     return (
       <Layout>
         <SEO></SEO>
         <Hero data={data}></Hero>
 
-        <div class="preis-wrapper mb-12 max-w-2xl mx-auto bg-black-trans p-4 blur">
+        <div className="preis-wrapper mb-12 max-w-2xl mx-auto bg-black-trans p-4 blur">
           <p>
             Dann ruf uns einfach an oder schreibe uns. Du kannst dich auch schon
             einmal unverbindlich für einen Platz in unserem Stall über folgendes
             Formular bewerben
           </p>
           <button
-            class="accordion"
             onClick={this.openContactForm}
             className={`${
               this.state.isClosed ? "border-b" : "border-b-0"
@@ -118,7 +107,7 @@ class KontaktPage extends Component {
           <div
             className={`${
               this.state.isClosed ? "hidden" : "block"
-            } mx-auto p-4 pt-0`}
+            } mx-auto p-4 bg-white-trans text-gray-100 mb-8`}
           >
             <h3 className="pt-0 text-center">
               Hier unverbindlich für unseren Stall bewerben
@@ -126,7 +115,7 @@ class KontaktPage extends Component {
             {this.state.feedbackMsg && <p>{this.state.feedbackMsg}</p>}
 
             <form
-              name="contact"
+              name="Kontakt"
               method="POST"
               data-netlify="true"
               onSubmit={event => this.handleSubmit(event)}
@@ -137,9 +126,65 @@ class KontaktPage extends Component {
                 ref="form-name"
                 type="hidden"
                 name="form-name"
-                value="contact"
+                value="Kontakt"
               />
-              <div>
+              <div className="form__wrapper">
+                <div className="form__headline">
+                  Für welches Paket möchtest du dich bewerben?
+                </div>
+                <div>
+                  <input type="radio" name="paket" value="Aktiv" />
+                  <input type="radio" name="paket" value="Premium" />
+                </div>
+              </div>
+              <div className="form__wrapper">
+                <div className="form__headline">Persönliche Angaben</div>
+                <div className="form__line">
+                  <div>
+                    <label htmlFor="name">Vor- und Nachname</label>
+                    <input
+                      type="text"
+                      name="name"
+                      onChange={this.handleChange}
+                      placeholder="Vor- und Nachname"
+                    />
+                  </div>
+                  <div>
+                    <label htmlFor="email">Email-Adresse (Pflichtfeld)</label>
+                    <input
+                      type="email"
+                      name="email"
+                      onChange={this.checkEmail}
+                      required
+                      placeholder="Email-Adresse (Pflichtfeld)"
+                    />
+                  </div>
+                </div>
+                <div className="form__line">
+                  <div>
+                    <label htmlFor="Telefonnummer">Telefonnummer</label>
+                    <input
+                      type="text"
+                      name="Telefonnummer"
+                      onChange={this.handleChange}
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="form__wrapper">
+                <div className="form__headline">Angaben zum Pferd</div>
+                <div className="form__line">
+                  <div>
+                    <label htmlFor="Name des Pferdes">Name des Pferdes</label>
+                    <input
+                      type="text"
+                      name="Name des Pferdes"
+                      onChange={this.handleChange}
+                    />
+                  </div>
+                </div>
+              </div>
+              {/*               <div>
                 <div className="my-5 text-sm">
                   <label htmlFor="email">Email-Adresse (i18n tbd)</label>
                   <input
@@ -164,7 +209,7 @@ class KontaktPage extends Component {
                     placeholder="Ihre Nachricht"
                   />
                 </div>
-              </div>
+              </div> */}
               <button
                 data={{ state: !this.state.valid, type: "submit" }}
                 type="submit"
