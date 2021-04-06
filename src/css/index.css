@@ -68,7 +68,7 @@
     @apply md:grid grid-cols-2 gap-4;
   }
   .form__headline {
-    @apply mb-4 border-b border-gray-light text-purple-trans;
+    @apply mb-4 border-b border-gray-light text-green-light;
   }
   @variants responsive {
     .hyphens {

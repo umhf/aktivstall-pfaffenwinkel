@@ -80,7 +80,7 @@ class KontaktPage extends Component {
         <SEO></SEO>
         <Hero data={data}></Hero>
 
-        <div className="preis-wrapper mb-12 max-w-2xl mx-auto bg-black-trans p-4 blur">
+        <div className="mb-12 max-w-2xl mx-auto bg-black-trans p-4 blur">
           <p>
             Dann ruf uns einfach an oder schreibe uns. Du kannst dich auch schon
             einmal unverbindlich für einen Platz in unserem Stall über folgendes
@@ -105,9 +105,7 @@ class KontaktPage extends Component {
             />
           </button>
           <div
-            className={`${
-              this.state.isClosed ? "hidden" : "block"
-            } mx-auto p-4 bg-white-trans text-gray-100 mb-8`}
+            className={`${this.state.isClosed ? "hidden" : "block"} mx-auto`}
           >
             <h3 className="pt-0 text-center">
               Hier unverbindlich für unseren Stall bewerben
