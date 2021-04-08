@@ -315,9 +315,9 @@ class KontaktPage extends Component {
                         <input
                           className="mr-2"
                           type="checkbox"
-                          name="Krankheiten"
+                          name="Krankheit EMS"
                           onChange={this.handleChange}
-                          value="EMS"
+                          value="Ja"
                         />
                         <span>EMS</span>
                       </div>
@@ -325,9 +325,9 @@ class KontaktPage extends Component {
                         <input
                           className="mr-2"
                           type="checkbox"
-                          name="Krankheiten"
+                          name="Krankheit ECS"
                           onChange={this.handleChange}
-                          value="ECS"
+                          value="Ja"
                         />
                         <span>ECS</span>
                       </div>
