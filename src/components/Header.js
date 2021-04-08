@@ -14,7 +14,7 @@ import {
 } from "react-icons/fa"
 
 const Header = () => {
-  const classes = "text-xs md:text-sm"
+  const classes = "text-xs md:text-sm md:mr-8"
   const activeClassesMobile = "text-green-100"
   const activeClasses = "font-bold"
   return (
@@ -30,7 +30,7 @@ const Header = () => {
             </Link>
           </div>
           <nav
-            className="navi justify-around 
+            className="navi justify-end 
        w-full bottom-0 items-center z-10 hidden md:flex"
           >
             <Link

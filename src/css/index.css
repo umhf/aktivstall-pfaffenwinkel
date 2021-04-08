@@ -57,7 +57,7 @@
   .preis-wrapper .icon {
     @apply mr-2 text-purple-light w-4 h-4;
   }
-  input,
+  input:not([type="radio"], [type="checkbox"]),
   textarea {
     @apply bg-transparent border border-gray-light w-full mb-4 px-2 py-1 focus:outline-none;
   }
@@ -69,6 +69,9 @@
   }
   .form__headline {
     @apply mb-4 border-b border-gray-light text-green-light;
+  }
+  button {
+    @apply focus:outline-none;
   }
   @variants responsive {
     .hyphens {

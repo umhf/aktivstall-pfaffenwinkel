@@ -8,6 +8,7 @@ import {
   FaEnvelope,
   FaChevronDown,
   FaChevronUp,
+  FaStar,
 } from "react-icons/fa"
 import axios from "axios"
 import * as qs from "query-string"
@@ -105,7 +106,9 @@ class KontaktPage extends Component {
             />
           </button>
           <div
-            className={`${this.state.isClosed ? "hidden" : "block"} mx-auto`}
+            className={`${
+              this.state.isClosed ? "hidden" : "block"
+            } p-4 bg-black-trans mb-12 -mx-4 px-4 md:mx-0`}
           >
             <h3 className="pt-0 text-center">
               Hier unverbindlich für unseren Stall bewerben
@@ -117,7 +120,7 @@ class KontaktPage extends Component {
               method="POST"
               data-netlify="true"
               onSubmit={event => this.handleSubmit(event)}
-              className={` ${this.state.sent && "hidden"}`}
+              className={`${this.state.sent && "hidden"}`}
               onChange={this.test}
             >
               <input
@@ -130,9 +133,48 @@ class KontaktPage extends Component {
                 <div className="form__headline">
                   Für welches Paket möchtest du dich bewerben?
                 </div>
-                <div>
-                  <input type="radio" name="paket" value="Aktiv" />
-                  <input type="radio" name="paket" value="Premium" />
+                <div className="md:grid md:grid-cols-2 md:gap-8 mb-4">
+                  <div className="relative p-8 border border-green-light hover:border-green-100">
+                    <div className="flex flex-col justify-center items-center">
+                      <div className="text-lg mb-2">Aktivpaket</div>
+                      <FaStar className="w-4 h-4 text-purple-light mb-4" />
+                      <div className="text-sm font-bold text-center">
+                        400 EUR pro Monat
+                      </div>
+                      <div className="text-sm text-center">
+                        Monatlicher Abäppeldienst
+                      </div>
+                    </div>
+                    <input
+                      className="w-full h-full absolute left-0 top-0 opacity-0"
+                      type="radio"
+                      name="paket"
+                      value="Aktiv"
+                      onChange={this.handleChange}
+                    />
+                  </div>
+                  <div className="relative p-8 border border-green-light hover:border-green-100">
+                    <div className="flex flex-col justify-center items-center">
+                      <div className="text-lg mb-2">Premiumpaket</div>
+                      <div className="flex mb-4">
+                        <FaStar className="w-4 h-4 text-purple-light" />
+                        <FaStar className="w-4 h-4 text-purple-light" />
+                      </div>
+                      <div className="text-sm font-bold text-center">
+                        450 EUR pro Monat
+                      </div>
+                      <div className="text-sm text-center">
+                        Kein Abäppeldienst notwendig
+                      </div>
+                    </div>
+                    <input
+                      className="w-full h-full absolute left-0 top-0 opacity-0"
+                      type="radio"
+                      name="paket"
+                      value="Premium"
+                      onChange={this.handleChange}
+                    />
+                  </div>
                 </div>
               </div>
               <div className="form__wrapper">
@@ -180,35 +222,208 @@ class KontaktPage extends Component {
                       onChange={this.handleChange}
                     />
                   </div>
+                  <div>
+                    <label htmlFor="Rasse des Pferdes">Rasse des Pferdes</label>
+                    <input
+                      type="text"
+                      name="Rasse des Pferdes"
+                      onChange={this.handleChange}
+                    />
+                  </div>
+                </div>
+                <div className="md:grid md:grid-cols-12 md:gap-4">
+                  <div className="md:col-span-5">
+                    <label htmlFor="Geschlecht">Geschlecht</label>
+                    <input
+                      type="text"
+                      name="Geschlecht"
+                      onChange={this.handleChange}
+                    />
+                  </div>
+                  <div className="md:col-span-5">
+                    <label htmlFor="Stockmaß">Stockmaß in cm</label>
+                    <input
+                      type="number"
+                      name="Stockmaß"
+                      onChange={this.handleChange}
+                    />
+                  </div>
+                  <div className="md:col-span-2">
+                    <label htmlFor="Alter">Alter</label>
+                    <input
+                      type="number"
+                      name="Alter"
+                      onChange={this.handleChange}
+                    />
+                  </div>
+                </div>
+                <div className="md:flex">
+                  <div className="mb-4 md:mr-4">
+                    <label htmlFor="Fütterung">Fütterung</label>
+                    <div>
+                      <div className="flex items-center">
+                        <input
+                          className="mr-2"
+                          type="radio"
+                          name="Fütterung"
+                          onChange={this.handleChange}
+                          value="leichtfuttrig"
+                        />
+                        <span>leichtfuttrig</span>
+                      </div>
+                      <div className="flex items-center">
+                        <input
+                          className="mr-2"
+                          type="radio"
+                          name="Fütterung"
+                          onChange={this.handleChange}
+                          value="schwerfuttrig"
+                        />
+                        <span>schwerfuttrig</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="mb-4 md:mr-4">
+                    <label htmlFor="Beschlag">Beschlag</label>
+                    <div>
+                      <div className="flex items-center">
+                        <input
+                          className="mr-2"
+                          type="radio"
+                          name="Beschlag"
+                          onChange={this.handleChange}
+                          value="Barhuf"
+                        />
+                        <span>Barhuf</span>
+                      </div>
+                      <div className="flex items-center">
+                        <input
+                          className="mr-2"
+                          type="radio"
+                          name="Beschlag"
+                          onChange={this.handleChange}
+                          value="Beschlag"
+                        />
+                        <span>Beschlag</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="mb-4 md:mr-4">
+                    <label htmlFor="Beschlag">Krankheiten</label>
+                    <div>
+                      <div className="flex items-center">
+                        <input
+                          className="mr-2"
+                          type="checkbox"
+                          name="Krankheiten"
+                          onChange={this.handleChange}
+                          value="EMS"
+                        />
+                        <span>EMS</span>
+                      </div>
+                      <div className="flex items-center">
+                        <input
+                          className="mr-2"
+                          type="checkbox"
+                          name="Krankheiten"
+                          onChange={this.handleChange}
+                          value="ECS"
+                        />
+                        <span>ECS</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <label htmlFor="Weitere Krankheiten">
+                    Weitere Krankheiten
+                  </label>
+                  <textarea
+                    rows="3"
+                    name="Weitere Krankheiten"
+                    placeholder="Sonstige Krankheiten hier beschreiben"
+                    onChange={this.handleChange}
+                  ></textarea>
+                </div>
+                <div>
+                  <label htmlFor="Gesundheitliche Besonderheiten">
+                    Gesundheitliche Besonderheiten
+                  </label>
+                  <textarea
+                    rows="3"
+                    name="Gesundheitliche Besonderheiten"
+                    placeholder="Gesundheitliche Besonderheiten / Rehe / Allergien / momentaner Futterzustand"
+                    onChange={this.handleChange}
+                  ></textarea>
+                </div>
+                <div>
+                  <label htmlFor="Bisheriger Rang in der Herde">
+                    Bisheriger Rang in der Herde
+                  </label>
+                  <textarea
+                    rows="3"
+                    name="Bisheriger Rang in der Herde"
+                    placeholder="Bisheriger Rang in der Herde (Chef/Mittel/Niedrig)"
+                    onChange={this.handleChange}
+                  ></textarea>
+                </div>
+                <div>
+                  <label htmlFor="Bisheriger Stall und Grund für den Wechsel">
+                    Bisheriger Stall und Grund für den Wechsel
+                  </label>
+                  <textarea
+                    rows="3"
+                    name="Bisheriger Stall und Grund für den Wechsel"
+                    placeholder="Bisheriger Stall und Grund für den Wechsel"
+                    onChange={this.handleChange}
+                  ></textarea>
+                </div>
+                <div>
+                  <label htmlFor="Darf das Pferd auf die Weide?">
+                    Darf das Pferd auf die Weide?
+                  </label>
+                  <textarea
+                    rows="3"
+                    name="Darf das Pferd auf die Weide?"
+                    placeholder="Darf ihr Pferd auf die Weide? Wenn ja, nur stundenweise?"
+                    onChange={this.handleChange}
+                  ></textarea>
+                </div>
+                <div>
+                  <label htmlFor="Gab es in Ihrem bisherigen Stall in den letzten 6 Monaten ansteckende Krankheiten?">
+                    Gab es in Ihrem bisherigen Stall in den letzten 6 Monaten
+                    ansteckende Krankheiten?
+                  </label>
+                  <textarea
+                    rows="3"
+                    name="Gab es in Ihrem bisherigen Stall in den letzten 6 Monaten ansteckende Krankheiten?"
+                    placeholder="Gab es in Ihrem bisherigen Stall in den letzten 6 Monaten ansteckende Krankheiten?"
+                    onChange={this.handleChange}
+                  ></textarea>
+                </div>
+                <div>
+                  <label htmlFor="Wann wurde das letzte Mal entwurmt?">
+                    Wann wurde das letzte Mal entwurmt?
+                  </label>
+                  <textarea
+                    rows="3"
+                    name="Wann wurde das letzte Mal entwurmt?"
+                    placeholder="Wann wurde das letzte Mal entwurmt?"
+                    onChange={this.handleChange}
+                  ></textarea>
+                </div>
+                <div>
+                  <label htmlFor="Bemerkungen">Bemerkungen</label>
+                  <textarea
+                    rows="3"
+                    name="Bemerkungen"
+                    placeholder="Weitere Bemerkungen und Anmerkungen"
+                    onChange={this.handleChange}
+                  ></textarea>
                 </div>
               </div>
-              {/*               <div>
-                <div className="my-5 text-sm">
-                  <label htmlFor="email">Email-Adresse (i18n tbd)</label>
-                  <input
-                    type="email"
-                    name="email"
-                    value={email}
-                    onChange={this.checkEmail}
-                    required
-                    className="rounded-sm px-4 py-3 mt-2 focus:outline-none w-full bg-gray-10"
-                    placeholder="Email"
-                  />
-                </div>
-                <div className="my-5 text-sm">
-                  <label htmlFor="message">Nachricht</label>
-
-                  <textarea
-                    name="message"
-                    value={message}
-                    onChange={this.handleChange}
-                    required
-                    className="rounded-sm px-4 py-3 mt-2 focus:outline-none w-full bg-gray-10"
-                    placeholder="Ihre Nachricht"
-                  />
-                </div>
-              </div> */}
               <button
+                className="w-full text-center p-2 border border-green-light text-white bg-green-trans hover:bg-green-100"
                 data={{ state: !this.state.valid, type: "submit" }}
                 type="submit"
               >
