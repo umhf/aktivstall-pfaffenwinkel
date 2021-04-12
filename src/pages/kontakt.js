@@ -134,7 +134,13 @@ class KontaktPage extends Component {
                   Für welches Paket möchtest du dich bewerben?
                 </div>
                 <div className="md:grid md:grid-cols-2 md:gap-8 mb-4">
-                  <div className="relative p-8 border border-green-light hover:border-green-100">
+                  <div
+                    className={`${
+                      this.state.data.paket === "Aktiv"
+                        ? "bg-green-trans"
+                        : "transparent"
+                    } relative p-8 border border-green-light hover:border-green-100 mb-4 md:mb-0`}
+                  >
                     <div className="flex flex-col justify-center items-center">
                       <div className="text-lg mb-2">Aktivpaket</div>
                       <FaStar className="w-4 h-4 text-purple-light mb-4" />
@@ -153,7 +159,13 @@ class KontaktPage extends Component {
                       onChange={this.handleChange}
                     />
                   </div>
-                  <div className="relative p-8 border border-green-light hover:border-green-100">
+                  <div
+                    className={`${
+                      this.state.data.paket === "Premium"
+                        ? "bg-green-trans"
+                        : "transparent"
+                    } relative p-8 border border-green-light hover:border-green-100`}
+                  >
                     <div className="flex flex-col justify-center items-center">
                       <div className="text-lg mb-2">Premiumpaket</div>
                       <div className="flex mb-4">
