@@ -198,7 +198,6 @@ class KontaktPage extends Component {
                       type="text"
                       name="name"
                       onChange={this.handleChange}
-                      placeholder="Vor- und Nachname"
                     />
                   </div>
                   <div>
@@ -208,7 +207,6 @@ class KontaktPage extends Component {
                       name="email"
                       onChange={this.checkEmail}
                       required
-                      placeholder="Email-Adresse (Pflichtfeld)"
                     />
                   </div>
                 </div>
