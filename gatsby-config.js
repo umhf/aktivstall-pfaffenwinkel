@@ -7,12 +7,6 @@ module.exports = {
     `gatsby-plugin-image`,
     "gatsby-plugin-sharp",
     "gatsby-plugin-react-helmet",
-    {
-      resolve: `gatsby-source-instagram`,
-      options: {
-        username: 21678746512,
-      },
-    },
     "gatsby-plugin-sitemap",
     {
       resolve: "gatsby-plugin-manifest",
