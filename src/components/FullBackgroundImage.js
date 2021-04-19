@@ -6,7 +6,7 @@ const FullBackgroundImage = ({ children }) => {
   const data = useStaticQuery(
     graphql`
       query {
-        desktop: file(relativePath: { eq: "horses-bg.jpeg" }) {
+        desktop: file(relativePath: { eq: "friesi-bg.jpg" }) {
           childImageSharp {
             fluid(quality: 90, maxWidth: 1920) {
               ...GatsbyImageSharpFluid_withWebp

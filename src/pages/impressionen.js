@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/Layout"
 import SEO from "../components/SEO"
+import { Helmet } from "react-helmet"
 import Hero from "../components/Hero"
 
 const ImpressionenPage = () => {
@@ -10,22 +11,23 @@ const ImpressionenPage = () => {
   return (
     <Layout>
       <SEO></SEO>
+      <Helmet>
+        <script
+          src="https://cdn.lightwidget.com/widgets/lightwidget.js"
+          type="text/javascript"
+        />
+      </Helmet>
       <Hero data={data}></Hero>
-      <iframe
-        src="https://snapwidget.com/embed/928992"
-        className="snapwidget-widget"
-        allowtransparency="true"
-        frameborder="0"
-        scrolling="no"
-        style={{
-          border: "none",
-          overflow: "hidden",
-          width: 765 + "px",
-          height: 510 + "px",
-        }}
-      ></iframe>
+      <div className="mb-12 mx-auto bg-black-trans p-4 blur">
+        <iframe
+          src="//lightwidget.com/widgets/b625622304055c12957b9d6359039701.html"
+          scrolling="yes"
+          allowtransparency="true"
+          className="lightwidget-widget"
+          style={{ width: "100%", border: 0, overflow: "hidden" }}
+        ></iframe>
+      </div>
     </Layout>
   )
 }
-
 export default ImpressionenPage

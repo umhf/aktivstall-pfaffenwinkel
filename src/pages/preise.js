@@ -77,7 +77,7 @@ const PreisePage = () => {
         </ul>
         <h2 className="text-center mt-4">Premiumpaket</h2>
         <div className="text-green-100 font-bold text-6xl flex justify-center p-4 m-4 border border-l-0 border-r-0 border-gray-light">
-          +50{" "}
+          450{" "}
           <span className="font-normal text-green-lightTrans text-base ml-2">
             EUR p.M.
           </span>
@@ -85,6 +85,10 @@ const PreisePage = () => {
         <li>
           <FaStar className="icon" />
           <span className="w-full">Kein Abäppeldienst notwendig</span>
+        </li>
+        <li>
+          <FaStar className="icon" />
+          <span className="w-full">Mineralfuntter inkludiert</span>
         </li>
       </div>
     </Layout>

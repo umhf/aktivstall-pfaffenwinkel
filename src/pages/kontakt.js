@@ -212,7 +212,9 @@ class KontaktPage extends Component {
                 </div>
                 <div className="form__line">
                   <div>
-                    <label htmlFor="Telefonnummer">Telefonnummer</label>
+                    <label htmlFor="Telefonnummer">
+                      Mobilfunknummer (bitte mit angeben)
+                    </label>
                     <input
                       type="text"
                       name="Telefonnummer"
