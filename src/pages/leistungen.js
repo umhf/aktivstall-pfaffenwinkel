@@ -37,7 +37,7 @@ const LeistungenPage = () => {
               <h2>Anlage und Trail</h2>
               <ul className="text-sm">
                 <li>
-                  ca. 7000 m² befestigte Trailanlage mit unterschiedlichen
+                  ca. 10.000 m² befestigte Trailanlage mit unterschiedlichen
                   Untergründen
                 </li>
                 <li>

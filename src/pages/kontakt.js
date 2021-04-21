@@ -12,6 +12,25 @@ import {
 } from "react-icons/fa"
 import axios from "axios"
 import * as qs from "query-string"
+import GoogleMapReact from "google-map-react"
+
+const AnyReactComponent = ({ text }) => (
+  <div
+    style={{
+      color: "grey",
+    }}
+  >
+    {text}
+  </div>
+)
+
+const defaultProps = {
+  center: {
+    lat: 47.75619581073682,
+    lng: 10.855748884592831,
+  },
+  zoom: 14,
+}
 
 class KontaktPage extends Component {
   constructor(props) {
@@ -466,6 +485,24 @@ class KontaktPage extends Component {
               <a href="tel:+4915254180038">0152 541 800 38</a>
               <a href="tel:+4988626165">08862 6165</a>
             </div>
+          </div>
+        </div>
+        <div className="mb-12" id="map">
+          <div style={{ height: "300px", width: "100%" }}>
+            <GoogleMapReact
+              bootstrapURLKeys={{
+                key: "AIzaSyAsqMAUIlnlRbVSB9iJcfrxlNCcYPRvU44",
+              }}
+              defaultCenter={defaultProps.center}
+              defaultZoom={defaultProps.zoom}
+            >
+              <AnyReactComponent
+                lat={47.75619581073682}
+                lng={10.855748884592831}
+                text="Aktivstall Pfaffenwinkel"
+                className="text-gray-100"
+              />
+            </GoogleMapReact>
           </div>
         </div>
       </Layout>
