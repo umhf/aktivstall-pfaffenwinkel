@@ -18,7 +18,7 @@ const ImpressionenPage = () => {
         />
       </Helmet>
       <Hero data={data}></Hero>
-      <div className="mb-12 mx-auto bg-black-trans p-4 blur">
+      <div className="mb-12 bg-black-trans p-4 blur">
         <iframe
           title="instagram"
           src="https://cdn.lightwidget.com/widgets/b625622304055c12957b9d6359039701.html"
