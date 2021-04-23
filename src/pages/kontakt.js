@@ -97,7 +97,7 @@ class KontaktPage extends Component {
 
     return (
       <Layout>
-        <SEO></SEO>
+        <SEO title="Kontakt"></SEO>
         <Hero data={data}></Hero>
 
         <div className="mb-12 max-w-2xl mx-auto bg-black-trans p-4 blur">

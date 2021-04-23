@@ -10,7 +10,7 @@ const ImpressionenPage = () => {
   data.text = ``
   return (
     <Layout>
-      <SEO></SEO>
+      <SEO title="Impressionen"></SEO>
       <Helmet>
         <script
           src="https://cdn.lightwidget.com/widgets/lightwidget.js"

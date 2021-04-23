@@ -23,14 +23,14 @@ const LeistungenPage = () => {
   }
   return (
     <Layout>
-      <SEO></SEO>
+      <SEO title="Leistungen"></SEO>
       <Hero data={data}></Hero>
       <div className="mb-12 max-w-2xl mx-auto">
         <Slider {...settings}>
           <div className="cart--leistungen relative px-1 max">
             <StaticImage
               src="../images/leistungen/1_luftaufnahme.jpeg"
-              alt="A dinosaur"
+              alt="Luftaufnahme"
               placeholder="blurred"
             />
             <div className="leistungen">
@@ -59,8 +59,8 @@ const LeistungenPage = () => {
           </div>
           <div className="cart--leistungen relative px-1">
             <StaticImage
-              src="../images/leistungen/1_luftaufnahme.jpeg"
-              alt="A dinosaur"
+              src="../images/leistungen/2_ruheraeume.jpeg"
+              alt="Ruheräume"
               placeholder="blurred"
             />
             <div className="leistungen">
@@ -81,8 +81,8 @@ const LeistungenPage = () => {
           </div>
           <div className="cart--leistungen relative px-1">
             <StaticImage
-              src="../images/leistungen/1_luftaufnahme.jpeg"
-              alt="A dinosaur"
+              src="../images/leistungen/3_fuetterung.jpeg"
+              alt="Kraftfutterautomaten"
               placeholder="blurred"
             />
             <div className="leistungen">
@@ -102,8 +102,8 @@ const LeistungenPage = () => {
           </div>
           <div className="cart--leistungen relative px-1">
             <StaticImage
-              src="../images/leistungen/1_luftaufnahme.jpeg"
-              alt="A dinosaur"
+              src="../images/leistungen/4_einsteller.jpeg"
+              alt="Für unsere Einsteller"
               placeholder="blurred"
             />
             <div className="leistungen">
@@ -122,8 +122,8 @@ const LeistungenPage = () => {
           </div>
           <div className="cart--leistungen relative px-1">
             <StaticImage
-              src="../images/leistungen/1_luftaufnahme.jpeg"
-              alt="A dinosaur"
+              src="../images/leistungen/5_training.jpg"
+              alt="Trainingsplätze"
               placeholder="blurred"
             />
             <div className="leistungen">

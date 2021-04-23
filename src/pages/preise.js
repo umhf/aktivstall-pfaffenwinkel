@@ -10,9 +10,9 @@ const PreisePage = () => {
   data.text = `Wir bieten ein attraktives und individualisierbares Preispaket`
   return (
     <Layout>
-      <SEO></SEO>
+      <SEO title="Preise"></SEO>
       <Hero data={data}></Hero>
-      <div class="preis-wrapper mb-12 max-w-2xl mx-auto bg-black-trans p-4 blur">
+      <div className="preis-wrapper mb-12 max-w-2xl mx-auto bg-black-trans p-4 blur">
         <h2 className="text-center">Aktivpaket</h2>
         <div className="text-green-100 font-bold text-6xl flex justify-center p-4 m-4 border border-l-0 border-r-0 border-gray-light">
           400{" "}

@@ -12,9 +12,9 @@ const IndexPage = () => {
   innovativen Aktivstall.`
   return (
     <Layout>
-      <SEO></SEO>
+      <SEO title="Startseite"></SEO>
       <Hero data={data}></Hero>
-      <div className="md:hyphens md:grid md:grid-cols-3 md:gap-4">
+      <div className="md:hyphens md:grid md:grid-cols-3 md:gap-4 mt-auto">
         <div className="cart blur">
           <p className="big-text">
             Wir haben jahrelange <span className="hl">Erfahrung </span>

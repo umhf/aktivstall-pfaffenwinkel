@@ -8,7 +8,7 @@ const Layout = ({ children }) => {
     <>
       <BackgroundImage></BackgroundImage>
       <Header></Header>
-      <main className="main relative container">{children}</main>
+      <main className="main relative container flex flex-col">{children}</main>
       <Footer></Footer>
     </>
   )

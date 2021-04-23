@@ -10,7 +10,7 @@ const UeberUnsPage = () => {
   data.text = `Wir haben unseren Traum im Mai 2020 verwirklicht`
   return (
     <Layout>
-      <SEO></SEO>
+      <SEO title="Über uns"></SEO>
       <Hero data={data}></Hero>
       <div className="mb-12 max-w-2xl mx-auto">
         <StaticImage

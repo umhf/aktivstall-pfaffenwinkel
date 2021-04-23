@@ -25,8 +25,8 @@ const Footer = () => {
         <Link to="/">
           <img src={logo} alt="Logo" className="mx-auto w-36" />
         </Link>
-        <div className="grid grid-cols-3 grid-flow-row gap-4 mt-4 sm:grid-cols-4 md:grid-cols-6">
-          <div className="links-wrapper row-span-2 sm:row-span-1 md:col-start-2">
+        <div className="grid grid-cols-2 grid-flow-row gap-4 mt-4 sm:grid-cols-4 lg:grid-cols-6">
+          <div className="links-wrapper row-span-2 sm:row-span-1 lg:col-start-2">
             <p className="font-bold">Seiten</p>
             <Link className="links" to="/">
               <FaHome className="icon" />
@@ -76,27 +76,6 @@ const Footer = () => {
             </a>
           </div>
           <div className="links-wrapper">
-            <p className="font-bold">Links</p>
-            <a
-              className="links"
-              rel="noreferrer"
-              target="_BLANK"
-              href="https://www.paddock-trail.de/index.html"
-            >
-              <FaLink className="icon" />
-              Paddock Trail
-            </a>
-            <a
-              className="links"
-              rel="noreferrer"
-              target="_BLANK"
-              href="https://aktivstall.de/de/konzept/"
-            >
-              <FaLink className="icon" />
-              HIT-Aktivstall Konzept
-            </a>
-          </div>
-          <div className="links-wrapper">
             <p className="font-bold">Social Media</p>
             <a
               className="links"
@@ -115,6 +94,27 @@ const Footer = () => {
             >
               <FaFacebookF className="icon" />
               Facebook
+            </a>
+          </div>
+          <div className="links-wrapper">
+            <p className="font-bold">Links</p>
+            <a
+              className="links"
+              rel="noreferrer"
+              target="_BLANK"
+              href="https://www.paddock-trail.de/index.html"
+            >
+              <FaLink className="icon" />
+              Paddock Trail
+            </a>
+            <a
+              className="links"
+              rel="noreferrer"
+              target="_BLANK"
+              href="https://aktivstall.de/de/konzept/"
+            >
+              <FaLink className="icon" />
+              HIT-Aktivstall Konzept
             </a>
           </div>
         </div>
