@@ -493,7 +493,7 @@ class KontaktPage extends Component {
           <div style={{ height: "300px", width: "100%" }}>
             <GoogleMapReact
               bootstrapURLKeys={{
-                key: "AIzaSyAsqMAUIlnlRbVSB9iJcfrxlNCcYPRvU44",
+                key: "AIzaSyBM5C_TbrfkHYAcnKU-zWuN7QIsk2IiIoE",
               }}
               defaultCenter={defaultProps.center}
               defaultZoom={defaultProps.zoom}
