@@ -25,7 +25,7 @@ const LeistungenPage = () => {
     <Layout>
       <SEO title="Leistungen"></SEO>
       <Hero data={data}></Hero>
-      <div className="mb-12 max-w-2xl mx-auto">
+      <div className="mb-12 max-w-2xl w-full mx-auto">
         <Slider {...settings}>
           <div className="cart--leistungen relative px-1 max">
             <StaticImage
