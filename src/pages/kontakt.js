@@ -132,7 +132,9 @@ class KontaktPage extends Component {
             <h3 className="pt-0 text-center">
               Hier unverbindlich für unseren Stall bewerben
             </h3>
-            {this.state.feedbackMsg && <p>{this.state.feedbackMsg}</p>}
+            {this.state.feedbackMsg && (
+              <p className="text-center">{this.state.feedbackMsg}</p>
+            )}
 
             <form
               name="Kontakt"
