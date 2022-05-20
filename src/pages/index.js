@@ -14,6 +14,15 @@ const IndexPage = () => {
     <Layout>
       <SEO title="Startseite"></SEO>
       <Hero data={data}></Hero>
+      <div className="aspect-w-16 aspect-h-9 mb-12">
+        <iframe
+          className="w-full"
+          src="https://www.youtube.com/embed/ukF_iRNUuow"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+      </div>
       <div className="md:hyphens md:grid md:grid-cols-3 md:gap-4 mt-auto">
         <div className="cart blur">
           <p className="big-text">
