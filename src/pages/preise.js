@@ -53,7 +53,8 @@ const PreisePage = () => {
           <li>
             <FaStar className="icon" />
             <span className="w-full">
-              Bei Bedarf Zugang zur Weide per Selektion
+              Sommer und Winterweide je nach Wetter, begrenzter Weidegang
+              möglich
             </span>
           </li>
           <li>
