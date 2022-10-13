@@ -53,12 +53,6 @@ const PreisePage = () => {
           <li>
             <FaStar className="icon" />
             <span className="w-full">
-              Bei Bedarf Zugang zum Ruhebereich (für ältere Pferde)
-            </span>
-          </li>
-          <li>
-            <FaStar className="icon" />
-            <span className="w-full">
               Sommer und Winterweide je nach Wetter, begrenzter Weidegang
               möglich
             </span>
