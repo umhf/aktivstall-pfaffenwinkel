@@ -15,7 +15,7 @@ const PreisePage = () => {
       <div className="preis-wrapper mb-12 max-w-2xl mx-auto bg-black-trans p-4 blur">
         <h2 className="text-center">Aktivpaket</h2>
         <div className="text-green-100 font-bold text-6xl flex justify-center p-4 m-4 border border-l-0 border-r-0 border-gray-light">
-          400{" "}
+          500{" "}
           <span className="font-normal text-green-lightTrans text-base ml-2">
             EUR p.M.
           </span>
@@ -41,7 +41,13 @@ const PreisePage = () => {
           <li>
             <FaStar className="icon" />
             <span className="w-full">
-              Füttern von Heu über die Raufutterstation
+            Bedarfsgerechte Fütterung über große Zeitgesteuerte Heuraufen
+            </span>
+          </li>
+          <li>
+            <FaStar className="icon" />
+            <span className="w-full">
+            Ad libitum Heu für Pferde mit Mehrbedarf (Aufpreis 30 €)
             </span>
           </li>
           <li>
@@ -67,6 +73,10 @@ const PreisePage = () => {
           </li>
           <li>
             <FaStar className="icon" />
+            <span className="w-full">Trainingsmöglichkeiten: Reithalle 20 m x 40 m, Longier -/ Bewegungshalle 20 m x 15 m, Allwetter Reitplatz 20 m x 40 m im Bau</span>
+          </li>
+          <li>
+            <FaStar className="icon" />
             <span className="w-full">Mineralfutter zubuchbar</span>
           </li>
           <li>
@@ -78,11 +88,15 @@ const PreisePage = () => {
         </ul>
         <h2 className="text-center mt-4">Premiumpaket</h2>
         <div className="text-green-100 font-bold text-6xl flex justify-center p-4 m-4 border border-l-0 border-r-0 border-gray-light">
-          450{" "}
+          550{" "}
           <span className="font-normal text-green-lightTrans text-base ml-2">
             EUR p.M.
           </span>
         </div>
+        <li>
+          <FaStar className="icon" />
+          <span className="w-full">Alles aus dem Aktivpaket</span>
+        </li>
         <li>
           <FaStar className="icon" />
           <span className="w-full">Kein Abäppeldienst notwendig</span>
