@@ -166,7 +166,7 @@ class KontaktPage extends Component {
                       <div className="text-lg mb-2">Aktivpaket</div>
                       <FaStar className="w-4 h-4 text-purple-light mb-4" />
                       <div className="text-sm font-bold text-center">
-                        400 EUR pro Monat
+                        500 EUR pro Monat
                       </div>
                       <div className="text-sm text-center">
                         Monatlicher Abäppeldienst
@@ -194,7 +194,7 @@ class KontaktPage extends Component {
                         <FaStar className="w-4 h-4 text-purple-light" />
                       </div>
                       <div className="text-sm font-bold text-center">
-                        450 EUR pro Monat
+                        550 EUR pro Monat
                       </div>
                       <div className="text-sm text-center">
                         Kein Abäppeldienst notwendig
