@@ -29,6 +29,27 @@ const LeistungenPage = () => {
         <Slider {...settings}>
           <div className="cart--leistungen relative px-1 max">
             <StaticImage
+              src="../images/leistungen/0_reithalle.jpg"
+              alt="Neue Reithalle"
+              placeholder="blurred"
+            />
+            <div className="leistungen">
+              <h2>NEUE Trainingsmöglichkeit</h2>
+              <ul className="text-sm">
+                <li>
+                  Longierhalle
+                </li>
+                <li>
+                  Reithalle
+                </li>
+                <li>
+                  Reitplatz
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="cart--leistungen relative px-1 max">
+            <StaticImage
               src="../images/leistungen/1_luftaufnahme.jpeg"
               alt="Luftaufnahme"
               placeholder="blurred"
@@ -37,7 +58,7 @@ const LeistungenPage = () => {
               <h2>Anlage und Trail</h2>
               <ul className="text-sm">
                 <li>
-                  ca. 10.000 m² befestigte Trailanlage mit unterschiedlichen
+                  <b>ca. 10.000 m²</b> befestigte Trailanlage mit unterschiedlichen
                   Untergründen
                 </li>
                 <li>
