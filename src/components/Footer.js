@@ -118,6 +118,7 @@ const Footer = () => {
             </a>
           </div>
         </div>
+        <p>Wir danken für die Förderung zur Mitfinanzierung der Reitplatzüberdachung durch eine Einzelbetriebliche Investitionsförderung (EIF) im Rahmen des Europäischen Landwirtschaftsfonds für die Entwicklung des ländlichen Raumes (ELER). <a href="http://www.aelf-wm.bayern.de/">http://www.aelf-wm.bayern.de/</a></p>
       </div>
     </footer>
   )
